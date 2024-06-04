@@ -19,19 +19,31 @@ export default function Home() {
             }}
           >
             <div className="relative w-full h-full">
-              {/* Button 1 */}
               <AnimatedButton
                 className="absolute p-2"
-                style={{ top: "20%", left: "30%" }}
-                tooltip={"ساخت لباس"}
+                style={{ top: "38%", left: "4%" }}
+                tooltip={"ایده بگیر"}
               />
-              {/* Button 2 */}
               <AnimatedButton
                 className="absolute p-2"
-                style={{ top: "40%", left: "50%" }}
+                style={{ top: "0%", left: "43%" }}
+                tooltip={"مارکت پلیس"}
+              />
+              <AnimatedButton
+                className="absolute p-2"
+                style={{ top: "24%", left: "65%" }}
                 tooltip={"ساخت لباس"}
               />
-              {/* Add more buttons as needed */}
+              <AnimatedButton
+                className="absolute p-2"
+                style={{ top: "-20%", left: "67%" }}
+                tooltip={"بسته بندی"}
+              />
+              <AnimatedButton
+                className="absolute p-2"
+                style={{ top: "-28%", left: "87%" }}
+                tooltip={"راهنمای سایزبندی"}
+              />
             </div>
           </div>
         </div>
