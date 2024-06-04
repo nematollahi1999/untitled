@@ -1,0 +1,12 @@
+.circular-button {
+    @apply w-12 h-12 rounded-full border-2 border-black flex items-center justify-center relative transition-all duration-300 ease-in-out cursor-pointer group-hover:w-36 group-hover:rounded-xl;
+  }
+  
+  .arrow {
+    @apply w-0 h-0 border-t-4 border-b-4 border-l-4 border-transparent border-l-black transition-all duration-300 ease-in-out;
+  }
+  
+  .button-text {
+    @apply absolute left-5 opacity-0 whitespace-nowrap transition-opacity duration-300 ease-in-out;
+  }
+  

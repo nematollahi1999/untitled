@@ -155,4 +155,10 @@
 
   body {
     font-family: PeydaWeb;
+    background-color: #000;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
