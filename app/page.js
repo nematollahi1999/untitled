@@ -22,7 +22,7 @@ export default function Home() {
               {/* Button 1 */}
               <AnimatedButton
                 className="absolute p-2"
-                style={{ top: "20%", left: "30%" }}
+                style={{ top: "36%", left: "3%" }}
                 tooltip={"ساخت لباس"}
               />
               {/* Button 2 */}
