@@ -1,6 +1,6 @@
 .glow-on-hover {
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 8px;
     border: none;
     outline: none;
     color: #fff;
@@ -30,7 +30,7 @@
     left: -5px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(0px);
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     animation: glowing 20s linear infinite;
@@ -85,13 +85,14 @@
     padding: 5px 7px;
     border-radius: 6px;
     position: absolute;
-    bottom: 60%; /* Position the tooltip above the button */
+    bottom: 90%; /* Position the tooltip above the button */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 20;
     font-size: small;
+
   }
   
   .tooltip.show {

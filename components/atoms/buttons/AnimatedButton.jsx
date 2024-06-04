@@ -7,7 +7,7 @@ export default function AnimatedButton({ className, style, tooltip }) {
 
   return (
     <div
-      className={`relative flex items-center justify-center w-40 h-40 ${className}`}
+      className={`relative flex items-center justify-center w-8 h-8 ${className}`}
       style={style}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
