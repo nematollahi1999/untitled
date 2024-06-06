@@ -32,7 +32,7 @@ const ToggleMenu = () => {
         onClick={handleToggle}
         className="fixed font-bold bottom-4 right-4 p-3 text-white rounded-full focus:outline-none"
       >
-        فهرست
+        اکسپلور
       </button>
 
       {(isOpen || isAnimating) && (

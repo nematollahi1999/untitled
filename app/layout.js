@@ -1,5 +1,5 @@
 import Navbar from "@/components/molecules/nav/Navbar";
-import ToggleMenu from "@/components/organisms/ToggleMenu";
+import ToggleMenu from "@/components/molecules/nav/ToggleMenu";
 import "@/styles/globals.css";
 
 export const metadata = {
