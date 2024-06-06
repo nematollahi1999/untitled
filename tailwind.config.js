@@ -17,6 +17,15 @@ module.exports = {
         display: ["PeydaWeb", "sans-serif"],
         numerals: ["PeydaWebFaNum", "sans-serif"],
       },
+      keyframes: {
+        beat: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+      },
+      animation: {
+        beat: 'beat 1s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

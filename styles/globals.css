@@ -162,3 +162,58 @@
     scroll-behavior: smooth;
   }
 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateX(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-1rem);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .animate-fade-out-down {
+    animation: fadeOutDown 0.1s ease-out forwards;
+  }
+  
+  @keyframes blurIn {
+    from {
+      backdrop-filter: blur(0px);
+    }
+    to {
+      backdrop-filter: blur(10px);
+    }
+  }
+  
+  @keyframes blurOut {
+    from {
+      backdrop-filter: blur(10px);
+    }
+    to {
+      backdrop-filter: blur(0px);
+    }
+  }
+  
+  .animate-blur-in {
+    animation: blurIn 0.5s ease-in-out forwards;
+  }
+  
+  .animate-blur-out {
+    animation: blurOut 0.2s ease-in-out forwards;
+  }
