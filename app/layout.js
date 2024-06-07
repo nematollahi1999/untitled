@@ -1,4 +1,5 @@
 import Navbar from "@/components/molecules/nav/Navbar";
+import ToggleMenu from "@/components/molecules/nav/ToggleMenu";
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className="">
         <Navbar />
         {children}
+        <ToggleMenu />
       </body>
     </html>
   );

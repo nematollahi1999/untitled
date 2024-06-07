@@ -1,7 +1,8 @@
 "use client";
 import Head from "next/head";
 import AnimatedButton from "@/components/atoms/buttons/AnimatedButton";
-import CircularButton from "@/components/atoms/buttons/CircularButton";
+import ArrowButton from "@/components/atoms/buttons/ArrowButton";
+import Arrow from "@/public/icons/Arrow";
 
 export default function Home() {
   return (
@@ -20,37 +21,53 @@ export default function Home() {
               backgroundPosition: "center",
             }}
           >
+            <div className="fixed top-0 z-50 w-full block sm:hidden p-4">
+              <a
+                href="#"
+                className="flex items-center justify-center space-x-3 rtl:space-x-reverse "
+              >
+                <img
+                  src="./images/logo.svg"
+                  className="h-8"
+                  alt="Flowbite Logo"
+                />
+              </a>
+            </div>
             <div className="relative w-full h-full">
-              <CircularButton
+              <ArrowButton
+                text="ایده بگیر"
+                className="absolute p-2"
+                style={{ top: "42%", left: "8%" }}
+              />
+
+              <ArrowButton
                 text="مارکت پلیس"
                 className="absolute p-2"
-                style={{ top: "40%", left: "8%" }}
+                style={{ top: "32%", left: "40%" }}
+              />
+
+              <ArrowButton
+                text="ساخت لباس"
+                className="absolute p-2"
+                style={{ top: "72%", left: "66%" }}
+              />
+
+              <ArrowButton
+                text="بسته بندی"
+                className="absolute p-2"
+                style={{ top: "30%", left: "70%" }}
+              />
+
+              <ArrowButton
+                text="سایزبندی"
+                className="absolute p-2"
+                style={{ top: "40%", left: "89%" }}
               />
               {/* <AnimatedButton
                 className="absolute p-2"
-                style={{ top: "40%", left: "8%" }}
-                tooltip={"ایده بگیر"}
-              /> */}
-              <AnimatedButton
-                className="absolute p-2"
-                style={{ top: "16%", left: "40%" }}
-                tooltip={"مارکت پلیس"}
-              />
-              <AnimatedButton
-                className="absolute p-2"
-                style={{ top: "57%", left: "68%" }}
-                tooltip={"ساخت لباس"}
-              />
-              <AnimatedButton
-                className="absolute p-2"
-                style={{ top: "20%", left: "70%" }}
-                tooltip={"بسته بندی"}
-              />
-              <AnimatedButton
-                className="absolute p-2"
                 style={{ top: "28%", left: "89%" }}
                 tooltip={"راهنمای سایزبندی"}
-              />
+              /> */}
             </div>
           </div>
         </div>
