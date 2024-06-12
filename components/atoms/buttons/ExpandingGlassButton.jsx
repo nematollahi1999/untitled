@@ -57,7 +57,7 @@ const ExpandingGlassButton = ({ style, text, subtext, color }) => {
           isHovered || isActive ? "delay-300 opacity-100" : "opacity-0"
         }`}
       >
-        <div className="font-black text-sm text-right">{text}</div>
+        <div className="font-bold text-sm text-right">{text}</div>
         <div className="font-light text-sm text-right ">{subtext}</div>
       </div>
     </div>
