@@ -1,7 +1,7 @@
 "use client";
 import Head from "next/head";
 import Navbar from "@/components/molecules/nav/Navbar";
-import ArrowButton from "@/components/atoms/buttons/ArrowButton";
+import ExpandingGlassButton from "@/components/atoms/buttons/ExpandingGlassButton";
 import Arrow from "@/public/icons/Arrow";
 
 export default function Home() {
@@ -35,33 +35,38 @@ export default function Home() {
               </a>
             </div>
             <div className="relative w-full h-full">
-              <ArrowButton
+              <ExpandingGlassButton
                 text="ایده بگیر"
-                className="absolute p-2"
+                color={"white"}
+                className=" p-2"
                 style={{ top: "37%", left: "6%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButton
                 text="مارکت پلیس"
-                className="absolute p-2"
+                color={"white"}
+                className=" p-2"
                 style={{ top: "30%", left: "36%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButton
                 text="ساخت لباس"
-                className="absolute p-2"
+                color={"white"}
+                className=" p-2"
                 style={{ top: "72%", left: "62%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButton
                 text="بسته بندی"
-                className="absolute p-2"
+                color={"white"}
+                className=" p-2"
                 style={{ top: "16%", left: "64%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButton
                 text="سایزبندی"
-                className="absolute p-2"
+                color={"white"}
+                className=" p-2"
                 style={{ top: "40%", left: "82.5%" }}
               />
               {/* <AnimatedButton
