@@ -11,8 +11,8 @@ const CircularButton = ({ text, className, style }) => {
       style={style}
     >
       <div
-        className={`relative flex items-center justify-around border-[2px] border-white transition-all duration-500 ease-in-out cursor-pointer ${
-          hovered ? "w-24 h-6 rounded-full " : "w-6 h-6 rounded-full"
+        className={`relative flex items-center justify-center border-[2px] border-white transition-all duration-500 ease-in-out cursor-pointer ${
+          hovered ? "w-24 h-[22px] rounded-full " : "w-[22px] h-[22px] rounded-full"
         }`}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -25,7 +25,7 @@ const CircularButton = ({ text, className, style }) => {
           {text}
         </span>
         <Arrow
-          className={`transition-all duration-150 ease-out  ${
+          className={`transition-all duration-150 ease-out   ${
             hovered ? "hidden" : "block"
           }`}
         />

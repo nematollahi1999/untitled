@@ -1,25 +1,28 @@
+/* styles/CircularButton.css */
+
 .circular-button {
-    @apply w-12 h-12 rounded-full border-2 border-black flex items-center justify-center relative transition-all duration-300 ease-in-out cursor-pointer group-hover:w-36 group-hover:rounded-xl;
+  @apply w-12 h-12 rounded-full border-2 border-black flex items-center justify-center relative transition-all duration-300 ease-in-out cursor-pointer group-hover:w-36 group-hover:rounded-xl;
+}
+
+.arrow {
+  @apply w-0 h-0 border-t-4 border-b-4 border-l-4 border-transparent border-l-black transition-all duration-300 ease-in-out;
+}
+
+.button-text {
+  @apply absolute left-5 opacity-0 whitespace-nowrap transition-opacity duration-300 ease-in-out;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  
-  .arrow {
-    @apply w-0 h-0 border-t-4 border-b-4 border-l-4 border-transparent border-l-black transition-all duration-300 ease-in-out;
+  50% {
+    transform: scale(2);
+    opacity: 0;
   }
-  
-  .button-text {
-    @apply absolute left-5 opacity-0 whitespace-nowrap transition-opacity duration-300 ease-in-out;
-  }
-  
-  @keyframes beat {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-  }
-  
-  .animate-beat {
-    animation: beat 1s ease-in-out infinite;
-  }
-  
+}
+
+.animate-beat {
+  animation: beat 1s ease-in-out infinite;
+}
