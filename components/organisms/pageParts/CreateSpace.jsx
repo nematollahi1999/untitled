@@ -11,10 +11,10 @@ const options = [
 ];
 
 const clothes = [
-  { value: "option1", text: "Option 1", subtext: "Subtext 1", bgColor: "bg-red-500" },
-  { value: "option2", text: "Option 2", subtext: "Subtext 2", bgColor: "bg-green-500" },
-  { value: "option3", text: "Option 3", subtext: "Subtext 3", bgColor: "bg-blue-500" },
-  { value: "option4", text: "Option 4", subtext: "Subtext 4", bgColor: "bg-yellow-500" },
+  { value: "Tshirt", text: "ساخت تیشرت", subtext: "ساخته شده تا الان", bgColor: "bg-red-500", badge: "153", img: "/images/product.jpg" },
+  { value: "Hoodie", text: "ساخت هودی", subtext: "ساخته شده تا الان", bgColor: "bg-green-500", badge: "562", img: "/images/product.jpg" },
+  { value: "Sweart shirt", text: "ساخت سوئیت شرت", subtext: "ساخته شده تا الان", bgColor: "bg-blue-500", badge: "126", img: "/images/product.jpg" },
+  { value: "Crop", text: "ساخت کراپ", subtext: "ساخته شده تا الان", bgColor: "bg-yellow-500", badge: "144", img: "/images/product.jpg" },
 ];
 
 import React from "react";
@@ -58,9 +58,9 @@ function CreateSpace() {
           text={"طراحی تنه"}
           subtext={"انتخاب استایل فیت و دوخت و دیزاین تنه"}
         />
-        <AddOrDecreaseButton style={{ top: "90%", left: "80%" }} />
+        <AddOrDecreaseButton style={{ bottom: "5%", left: "80%" }} />
         <ChooseColorToggle options={options} style={{ top: "5%", left: "90%" }} />
-        <ClothesGlassToggle options={clothes} style={{ top: "73%", left: "6%" }} />
+        <ClothesGlassToggle options={clothes} style={{ bottom: "5%", left: "6%" }} />
       </div>
     </div>
   );
