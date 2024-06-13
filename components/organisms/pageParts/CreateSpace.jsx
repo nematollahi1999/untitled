@@ -1,5 +1,13 @@
 import AddOrDecreaseButton from "@/components/atoms/buttons/AddOrDecreaseButton";
 import ExpandingGlassButtonBlack from "@/components/atoms/buttons/ExpandingGlassButtonBlack";
+import ChooseColorToggle from "@/components/atoms/toggles/ChooseColorToggle";
+
+const options = [
+  { value: "option1", bgColor: "bg-red-500" },
+  { value: "option2", bgColor: "bg-green-500" },
+  { value: "option3", bgColor: "bg-blue-500" },
+  { value: "option4", bgColor: "bg-yellow-500" },
+];
 import React from "react";
 
 function CreateSpace() {
@@ -20,7 +28,7 @@ function CreateSpace() {
         src="/images/xcreate.svg"
         alt="UNTITLED create"
         className="absolute w-52"
-        style={{ top: "5%", left: "8%" }}
+        style={{ top: "5%", left: "7%" }}
       />
       <div className="h-full w-full">
         <ExpandingGlassButtonBlack
@@ -41,7 +49,8 @@ function CreateSpace() {
           text={"طراحی تنه"}
           subtext={"انتخاب استایل فیت و دوخت و دیزاین تنه"}
         />
-        <AddOrDecreaseButton style={{ top: "90%", left: "8%" }} />
+        <AddOrDecreaseButton style={{ top: "90%", left: "7%" }} />
+        <ChooseColorToggle options={options} style={{ top: "73%", left: "7%" }} />
       </div>
     </div>
   );

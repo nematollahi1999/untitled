@@ -150,7 +150,7 @@
     font-weight: normal;
     src: url("./fonts/numerals/woff2/PeydaWebFaNum-Regular.woff2") format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("./fonts/numerals/woff/PeydaWebFaNum-Regular.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("./fonts/numerals/woff/PeydaWebFaNum-Regular.woff") format("woff"); 
   }
   @font-face {
     font-family: UnisonBoldItalic;
@@ -184,8 +184,6 @@
     font-family: PeydaWeb;
 
   }
-
-
 
   @keyframes fadeInUp {
     from {

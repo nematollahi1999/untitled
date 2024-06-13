@@ -1,6 +1,7 @@
 import CreateSpace from "@/components/organisms/pageParts/CreateSpace";
 import React from "react";
 
+
 const HomePage = () => {
   return (
     <div className="h-screen overflow-hidden">
