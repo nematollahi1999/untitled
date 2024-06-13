@@ -1,12 +1,13 @@
 "use client";
 import Head from "next/head";
-import AnimatedButton from "@/components/atoms/buttons/AnimatedButton";
-import ArrowButton from "@/components/atoms/buttons/ArrowButton";
+import Navbar from "@/components/molecules/nav/Navbar";
+import ExpandingGlassButtonWhite from "@/components/atoms/buttons/ExpandingGlassButtonWhite";
 import Arrow from "@/public/icons/Arrow";
 
 export default function Home() {
   return (
     <div className="relative w-screen h-screen overflow-hidden ">
+      <Navbar />
       <Head>
         <title>UNTITLED Clothing</title>
       </Head>
@@ -16,7 +17,7 @@ export default function Home() {
           <div
             className="relative w-[480vw] h-[100%] sm:w-full sm:h-full"
             style={{
-              backgroundImage: "url('/images/0104v02.jpg')",
+              backgroundImage: "url('/images/02v01.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -33,35 +34,40 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="relative w-full h-full">
-              <ArrowButton
+            <div className="absolute w-full h-full">
+              <ExpandingGlassButtonWhite
                 text="ایده بگیر"
-                className="absolute p-2"
-                style={{ top: "42%", left: "8%" }}
+                color={"white"}
+                className=" p-2"
+                style={{ top: "37%", left: "6%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButtonWhite
                 text="مارکت پلیس"
-                className="absolute p-2"
-                style={{ top: "32%", left: "40%" }}
+                color={"white"}
+                className=" p-2"
+                style={{ top: "26%", left: "39%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButtonWhite
                 text="ساخت لباس"
-                className="absolute p-2"
-                style={{ top: "72%", left: "66%" }}
+                color={"white"}
+                className=" p-2"
+                style={{ top: "72%", left: "62%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButtonWhite
                 text="بسته بندی"
-                className="absolute p-2"
-                style={{ top: "30%", left: "70%" }}
+                color={"white"}
+                className=" p-2"
+                style={{ top: "16%", left: "64%" }}
               />
 
-              <ArrowButton
+              <ExpandingGlassButtonWhite
                 text="سایزبندی"
-                className="absolute p-2"
-                style={{ top: "40%", left: "89%" }}
+                color={"white"}
+                className=" p-2"
+                style={{ top: "36%", left: "82.5%" }}
               />
               {/* <AnimatedButton
                 className="absolute p-2"

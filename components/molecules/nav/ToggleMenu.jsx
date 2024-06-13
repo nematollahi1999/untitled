@@ -39,27 +39,27 @@ const ToggleMenu = () => {
         <div
           id="menu-overlay"
           onClick={handleClose}
-          className={`fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center transition-all ${
+          className={`fixed inset-0 bg-black bg-opacity-30 flex items-center justify-end transition-all ${
             isOpen ? 'animate-blur-in' : 'animate-blur-out'
           }`}
         >
           <div
-            className={`absolute bottom-4 left-4 flex flex-col space-y-4 p-6 rounded-lg shadow-lg transition-transform transform ${
+            className={`absolute bottom-4 left-4 flex flex-col justify-end space-y-4 p-6 rounded-lg shadow-lg transition-transform transform ${
               isOpen
                 ? 'translate-y-0 opacity-100 animate-fade-in-up'
                 : 'translate-y-8 opacity-0 animate-fade-out-down'
             }`}
           >
-            <button className="py-2 px-4 text-white rounded focus:outline-none">
+            <button className="flex justify-start py-2 px-4 text-white rounded focus:outline-none">
               ساخت لباس
             </button>
-            <button className="py-2 px-4 text-white rounded focus:outline-none">
+            <button className="flex justify-start py-2 px-4 text-white rounded focus:outline-none">
               طراحی لباس
             </button>
-            <button className="py-2 px-4 text-white rounded focus:outline-none">
+            <button className="flex justify-start py-2 px-4 text-white rounded focus:outline-none">
               فروشگاه
             </button>
-            <button className="py-2 px-4 text-white rounded focus:outline-none">
+            <button className="flex justify-start py-2 px-4 text-white rounded focus:outline-none">
               کلابز
             </button>
           </div>

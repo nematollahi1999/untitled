@@ -150,16 +150,39 @@
     font-weight: normal;
     src: url("./fonts/numerals/woff2/PeydaWebFaNum-Regular.woff2") format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("./fonts/numerals/woff/PeydaWebFaNum-Regular.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("./fonts/numerals/woff/PeydaWebFaNum-Regular.woff") format("woff"); 
+  }
+  @font-face {
+    font-family: UnisonBoldItalic;
+    font-style: italic;
+    font-weight: bold;
+    src: url("./fonts/Unison-Bold-Italic.otf") format("opentype"),
+  }
+
+  @font-face {
+    font-family: UnisonBold;
+    font-style: normal;
+    font-weight: bold;
+    src: url("./fonts/Unison-Bold.otf") format("opentype"),
+  }
+
+  @font-face {
+    font-family: UnisonLightItalic;
+    font-style: italic;
+    font-weight: light;
+    src: url("./fonts/Unison-Light-Italic.otf") format("opentype"),
+  }
+
+  @font-face {
+    font-family: UnisonLight;
+    font-style: normal;
+    font-weight: light;
+    src: url("./fonts/Unison-Light.otf") format("opentype"),
   }
 
   body {
     font-family: PeydaWeb;
-    background-color: #000;
-  }
 
-  html {
-    scroll-behavior: smooth;
   }
 
   @keyframes fadeInUp {
@@ -216,4 +239,20 @@
   
   .animate-blur-out {
     animation: blurOut 0.2s ease-in-out forwards;
+  }
+
+  .unison-bold-italic {
+    font-family: UnisonBoldItalic;
+  }
+
+  .unison-bold {
+    font-family: UnisonBold;
+  }
+
+  .unison-light-italic {
+    font-family: UnisonLightItalic;
+  }
+
+  .unison-light {
+    font-family: UnisonLight;
   }
