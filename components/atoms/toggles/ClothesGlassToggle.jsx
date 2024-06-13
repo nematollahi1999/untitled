@@ -31,7 +31,7 @@ const OptionButton = ({
         <div className="text-right ">
           <div className="font-bold text-xs">{option.text}</div>
           <div className="flex">
-            <span class=" inline-flex items-center rounded-full bg-black px-1 text-xs font-light text-white leading-none	">
+            <span class=" inline-flex items-center rounded-full bg-black px-1 text-xs font-light text-white leading-none mr-1">
               {badge}
             </span>
             <div className="font-light text-xs">{option.subtext}</div>
