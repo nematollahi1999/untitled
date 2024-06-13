@@ -1,7 +1,7 @@
 "use client";
 import Head from "next/head";
 import Navbar from "@/components/molecules/nav/Navbar";
-import ExpandingGlassButton from "@/components/atoms/buttons/ExpandingGlassButton";
+import ExpandingGlassButtonWhite from "@/components/atoms/buttons/ExpandingGlassButtonWhite";
 import Arrow from "@/public/icons/Arrow";
 
 export default function Home() {
@@ -34,40 +34,40 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="relative w-full h-full">
-              <ExpandingGlassButton
+            <div className="absolute w-full h-full">
+              <ExpandingGlassButtonWhite
                 text="ایده بگیر"
                 color={"white"}
                 className=" p-2"
                 style={{ top: "37%", left: "6%" }}
               />
 
-              <ExpandingGlassButton
+              <ExpandingGlassButtonWhite
                 text="مارکت پلیس"
                 color={"white"}
                 className=" p-2"
-                style={{ top: "30%", left: "36%" }}
+                style={{ top: "26%", left: "39%" }}
               />
 
-              <ExpandingGlassButton
+              <ExpandingGlassButtonWhite
                 text="ساخت لباس"
                 color={"white"}
                 className=" p-2"
                 style={{ top: "72%", left: "62%" }}
               />
 
-              <ExpandingGlassButton
+              <ExpandingGlassButtonWhite
                 text="بسته بندی"
                 color={"white"}
                 className=" p-2"
                 style={{ top: "16%", left: "64%" }}
               />
 
-              <ExpandingGlassButton
+              <ExpandingGlassButtonWhite
                 text="سایزبندی"
                 color={"white"}
                 className=" p-2"
-                style={{ top: "40%", left: "82.5%" }}
+                style={{ top: "36%", left: "82.5%" }}
               />
               {/* <AnimatedButton
                 className="absolute p-2"
