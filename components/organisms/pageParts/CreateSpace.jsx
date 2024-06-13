@@ -1,13 +1,22 @@
 import AddOrDecreaseButton from "@/components/atoms/buttons/AddOrDecreaseButton";
 import ExpandingGlassButtonBlack from "@/components/atoms/buttons/ExpandingGlassButtonBlack";
 import ChooseColorToggle from "@/components/atoms/toggles/ChooseColorToggle";
+import ClothesGlassToggle from "@/components/atoms/toggles/ClothesGlassToggle";
 
 const options = [
-  { value: "option1", bgColor: "bg-red-500" },
-  { value: "option2", bgColor: "bg-green-500" },
+  { value: "option1", bgColor: "bg-gray-500" },
+  { value: "option2", bgColor: "bg-black" },
   { value: "option3", bgColor: "bg-blue-500" },
   { value: "option4", bgColor: "bg-yellow-500" },
 ];
+
+const clothes = [
+  { value: "option1", text: "Option 1", subtext: "Subtext 1", bgColor: "bg-red-500" },
+  { value: "option2", text: "Option 2", subtext: "Subtext 2", bgColor: "bg-green-500" },
+  { value: "option3", text: "Option 3", subtext: "Subtext 3", bgColor: "bg-blue-500" },
+  { value: "option4", text: "Option 4", subtext: "Subtext 4", bgColor: "bg-yellow-500" },
+];
+
 import React from "react";
 
 function CreateSpace() {
@@ -49,8 +58,9 @@ function CreateSpace() {
           text={"طراحی تنه"}
           subtext={"انتخاب استایل فیت و دوخت و دیزاین تنه"}
         />
-        <AddOrDecreaseButton style={{ top: "90%", left: "7%" }} />
-        <ChooseColorToggle options={options} style={{ top: "73%", left: "7%" }} />
+        <AddOrDecreaseButton style={{ top: "90%", left: "80%" }} />
+        <ChooseColorToggle options={options} style={{ top: "5%", left: "90%" }} />
+        <ClothesGlassToggle options={clothes} style={{ top: "73%", left: "6%" }} />
       </div>
     </div>
   );

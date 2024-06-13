@@ -10,11 +10,11 @@ const ChooseColorToggle = ({ options, style }) => {
 
   return (
     <div className="absolute" style={style}>
-    <div className="flex flex-col space-y-2">
+    <div className="flex flex-col space-y-1">
       {options.map((option) => (
         <div
           key={option.value}
-          className={`flex items-center justify-center w-7 h-7 rounded-full cursor-pointer border border-2 ${option.bgColor}`}
+          className={`flex items-center justify-center w-6 h-6 rounded-full cursor-pointer border border-2 ${option.bgColor}`}
           onClick={() => handleOptionClick(option)}
         >
           {selectedOption === option && (
