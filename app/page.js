@@ -2,9 +2,11 @@
 import Head from "next/head";
 import Navbar from "@/components/molecules/nav/Navbar";
 import ExpandingGlassButtonWhite from "@/components/atoms/buttons/ExpandingGlassButtonWhite";
-import Arrow from "@/public/icons/Arrow";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="relative w-screen h-screen overflow-hidden ">
       <Navbar />
@@ -54,6 +56,7 @@ export default function Home() {
                 color={"white"}
                 className=" p-2"
                 style={{ top: "72%", left: "62%" }}
+                onClick={() => router.push('/create')}
               />
 
               <ExpandingGlassButtonWhite

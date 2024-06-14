@@ -11,10 +11,38 @@ const options = [
 ];
 
 const clothes = [
-  { value: "option1", text: "Option 1", subtext: "Subtext 1", bgColor: "bg-red-500" },
-  { value: "option2", text: "Option 2", subtext: "Subtext 2", bgColor: "bg-green-500" },
-  { value: "option3", text: "Option 3", subtext: "Subtext 3", bgColor: "bg-blue-500" },
-  { value: "option4", text: "Option 4", subtext: "Subtext 4", bgColor: "bg-yellow-500" },
+  {
+    value: "Tshirt",
+    text: "ساخت تیشرت",
+    subtext: "ساخته شده تا الان",
+    bgColor: "bg-red-500",
+    badge: "153",
+    img: "/images/product.jpg",
+  },
+  {
+    value: "Hoodie",
+    text: "ساخت هودی",
+    subtext: "ساخته شده تا الان",
+    bgColor: "bg-green-500",
+    badge: "562",
+    img: "/images/product.jpg",
+  },
+  {
+    value: "Sweart shirt",
+    text: "ساخت سوئیت شرت",
+    subtext: "ساخته شده تا الان",
+    bgColor: "bg-blue-500",
+    badge: "126",
+    img: "/images/product.jpg",
+  },
+  {
+    value: "Crop",
+    text: "ساخت کراپ",
+    subtext: "ساخته شده تا الان",
+    bgColor: "bg-yellow-500",
+    badge: "144",
+    img: "/images/product.jpg",
+  },
 ];
 
 import React from "react";
@@ -22,15 +50,11 @@ import React from "react";
 function CreateSpace() {
   return (
     <div
-      className="bg-cover bg-center w-full h-full relative"
+      className="bg-cover bg-center w-full h-full relative lg:rounded-tr-[60px] lg:rounded-tl-[60px] lg:rounded-br-[60px] md:rounded-tr-[60px] md:rounded-tl-[60px] md:rounded-br-[60px] rounded-none"
       style={{
         backgroundImage: "url('/images/create.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        borderTopRightRadius: "60px",
-        borderTopLeftRadius: "60px",
-        borderBottomRightRadius: "60px",
-        borderBottomLeftRadius: "0px",
       }}
     >
       <img
@@ -42,25 +66,31 @@ function CreateSpace() {
       <div className="h-full w-full">
         <ExpandingGlassButtonBlack
           style={{ top: "20%", left: "41%" }}
-          expandedWidth={"w-56"}
+          expandedWidth={"w-34"}
           text={"طراحی یقه"}
-          subtext={"انتخاب استایل فیت و دوخت یقه"}
+          subtext={"فیت استایل دوخت"}
         />
         <ExpandingGlassButtonBlack
           style={{ top: "46%", left: "24%" }}
-          expandedWidth={"w-60"}
+          expandedWidth={"w-34"}
           text={"طراحی آستین"}
-          subtext={"انتخاب استایل فیت و دوخت و آستین"}
+          subtext={"فیت استایل دوخت"}
         />
         <ExpandingGlassButtonBlack
           style={{ top: "30%", left: "52%" }}
-          expandedWidth={"w-64"}
+          expandedWidth={"w-34"}
           text={"طراحی تنه"}
-          subtext={"انتخاب استایل فیت و دوخت و دیزاین تنه"}
+          subtext={"فیت استایل دیزاین"}
         />
-        <AddOrDecreaseButton style={{ top: "90%", left: "80%" }} />
-        <ChooseColorToggle options={options} style={{ top: "5%", left: "90%" }} />
-        <ClothesGlassToggle options={clothes} style={{ top: "73%", left: "6%" }} />
+        <AddOrDecreaseButton style={{ bottom: "5%", right: "7%" }} />
+        <ChooseColorToggle
+          options={options}
+          style={{ top: "5%", left: "90%" }}
+        />
+        <ClothesGlassToggle
+          options={clothes}
+          style={{ bottom: "5%", left: "6%" }}
+        />
       </div>
     </div>
   );
