@@ -24,7 +24,7 @@ const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth }) => {
 
   return (
     <div
-      className={`absolute flex items-center transition-all duration-300 ease-in-out backdrop-blur-sm bg-black/30 ${
+      className={`transform scale-80 lg:scale-100 md:scale-100 absolute flex items-center transition-all duration-300 ease-in-out backdrop-blur-sm bg-black/30 ${
         isHovered || isActive ? expandedWidth : "w-12"
       } h-12 rounded-full cursor-pointer overflow-hidden`}
       onMouseEnter={handleMouseEnter}
@@ -47,7 +47,7 @@ const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth }) => {
         </svg>
       </div>
       <div
-        className={`pl-12 pr-2 text-white transition-opacity duration-100 ease-in-out ${
+        className={`pl-10 pr-4 text-white transition-opacity duration-100 ease-in-out ${
           isHovered || isActive ? "opacity-100 delay-300" : "opacity-0"
         }`}
       >

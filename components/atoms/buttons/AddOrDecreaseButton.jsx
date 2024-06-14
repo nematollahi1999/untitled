@@ -17,7 +17,7 @@ const Counter = ({ style }) => {
   };
 
   return (
-    <div className="absolute" style={style}>
+    <div className="absolute transform scale-75 lg:scale-100" style={style}>
     <div className=" flex items-center ">
       <div className="text-3xl unison-light w-20 h-10">
         {String(count).padStart(2, '0')}

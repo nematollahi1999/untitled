@@ -1,5 +1,5 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const AccordionItem = ({
@@ -9,7 +9,12 @@ const AccordionItem = ({
   onClick,
   selectedOption,
   onOptionClick,
+  header,
+  detail,
+  samples,
 }) => {
+  const router = useRouter();
+
   return (
     <div className=" rounded mb-2 w-full">
       <div
@@ -40,19 +45,78 @@ const AccordionItem = ({
         </span>
       </div>
       {isOpen && (
-        <div className="p-3 bg-white">
-          <div className="flex gap-2">
-            {options.map((option, index) => (
-              <div
-                key={index}
-                className={`card p-2 border rounded cursor-pointer ${
-                  selectedOption === option ? "bg-blue-200" : "bg-gray-100"
-                }`}
-                onClick={() => onOptionClick(option)}
-              >
-                {option}
-              </div>
-            ))}
+        <div className="">
+          <div className="pt-4 flex justify-between items-center px-4">
+            <div className="">
+              <h3 className="font-black text-sm">{header}</h3>
+              <p className="font-light text-xs">{detail}</p>
+            </div>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-light text-sm py-2 px-4 rounded-lg leading-none" onClick={() => router.push(samples)}>
+              مشاهده نمونه
+            </button>
+          </div>
+          <div className="p-4">
+            <div className="flex gap-2">
+              {options.map((option, index) => (
+                <div
+                  key={index}
+                  className={`w-1/3 card rounded cursor-pointer`}
+                  onClick={() => onOptionClick(option.title)}
+                  style={
+                    selectedOption === option.title
+                      ? {
+                          borderTopRightRadius: "20px",
+                          borderTopLeftRadius: "45px",
+                          borderBottomRightRadius: "45px",
+                          borderBottomLeftRadius: "45px",
+                          backgroundColor: "#9599FF",
+                          color: "#3C43EB",
+                        }
+                      : {
+                          borderTopRightRadius: "20px",
+                          borderTopLeftRadius: "45px",
+                          borderBottomRightRadius: "45px",
+                          borderBottomLeftRadius: "45px",
+                          backgroundColor: "#EBEBF6",
+                        }
+                  }
+                >
+                  <div className="flex flex-col items-start">
+                    <div className="p-3">
+                      <div className="text-sm text-black">{option.title}</div>
+                      <div className="text-xs font-light text-gray-700">
+                        {option.subtitle}
+                      </div>
+                    </div>
+                    <div className="relative flex items-center justify-center">
+                      <img
+                        className="w-full h-auto"
+                        src={option.img}
+                        alt="product"
+                        style={{
+                          borderTopRightRadius: "0px",
+                          borderTopLeftRadius: "0px",
+                          borderBottomRightRadius: "45px",
+                          borderBottomLeftRadius: "45px",
+                        }}
+                      />
+                      {selectedOption === option.title && (
+                        <div
+                          className="absolute inset-0 opacity-20 rounded-b-full"
+                          style={{
+                            borderTopRightRadius: "0px",
+                            borderTopLeftRadius: "0px",
+                            borderBottomRightRadius: "45px",
+                            borderBottomLeftRadius: "45px",
+                            backgroundColor: "#9599FF",
+                          }}
+                        />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
@@ -81,7 +145,10 @@ const NeckAccordion = ({ items }) => {
         <AccordionItem
           key={index}
           title={item.title}
+          header={item.header}
+          detail={item.detail}
           options={item.options}
+          samples={item.samples}
           isOpen={openIndex === index}
           onClick={() => handleItemClick(index)}
           selectedOption={selectedOptions[index]}

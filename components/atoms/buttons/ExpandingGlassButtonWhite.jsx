@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Arrow from "@/public/icons/Arrow";
 
-const ExpandingGlassButtonWhite = ({ style, text, subtext, color }) => {
+const ExpandingGlassButtonWhite = ({ style, text, subtext, color, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -47,6 +47,7 @@ const ExpandingGlassButtonWhite = ({ style, text, subtext, color }) => {
         className={`pl-14 text-white transition-opacity duration-100 ease-in-out ${
           isHovered || isActive ? "delay-300 opacity-100" : "opacity-0"
         }`}
+        onClick={onClick}
       >
         <div className="font-bold text-xs text-right">{text}</div>
         <div className="font-light text-xs text-right ">{subtext}</div>
