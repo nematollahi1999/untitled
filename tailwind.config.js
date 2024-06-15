@@ -19,14 +19,26 @@ module.exports = {
       },
       keyframes: {
         beat: {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.2)' },
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.2)" },
         },
       },
       animation: {
-        beat: 'beat 1s ease-in-out infinite',
+        beat: "beat 1s ease-in-out infinite",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".hide-scrollbar": {
+          "-ms-overflow-style": "none" /* IE and Edge */,
+          "scrollbar-width": "none" /* Firefox */,
+        },
+        ".hide-scrollbar::-webkit-scrollbar": {
+          display: "none" /* Chrome, Safari and Opera */,
+        },
+      });
+    },
+  ],
 };

@@ -10,14 +10,14 @@ const HomePage = () => {
         <div className="hidden lg:block lg:col-span-3"></div>
 
         {/* Middle Column - always visible */}
-        <div className="col-span-1 md:col-span-4 md:p-8 lg:col-span-4 lg:p-8 flex items-center justify-center p-0">
+        <div className="col-span-1 md:col-span-4 md:p-6 lg:col-span-4 lg:p-6 flex items-center justify-center p-0">
           <CreateSpace />
         </div>
 
         {/* Right Column - hidden on mobile, visible on tablet and desktop */}
         <div
           dir="rtl"
-          className="hidden md:block md:col-span-3 lg:col-span-3 flex items-start justify-start p-8"
+          className="hidden md:block md:col-span-3 lg:col-span-3 flex items-start justify-start py-4 pr-4 h-screen overflow-y-auto hide-scrollbar"
         >
           <CreateDetail />
         </div>
