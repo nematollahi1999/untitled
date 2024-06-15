@@ -106,7 +106,7 @@ function CreateDetail() {
           اتمام و ذخیره
         </button>
       </div>
-      <div className="pr-4 py-4">
+      <div className="pr-4 py-5 ">
         <CalculatePrice />
       </div>
     </div>

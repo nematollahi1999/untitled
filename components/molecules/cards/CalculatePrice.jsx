@@ -3,7 +3,7 @@ import React from "react";
 const CalculatePrice = ({ title, subtitle }) => {
   return (
     <div
-      className="w-full mx-auto rounded-2xl shadow-lg overflow-hidden"
+      className="w-full mx-auto rounded-xl overflow-hidden"
       style={{
         backgroundColor: "#EBEBF6",
         borderTopRightRadius: "45px",
@@ -18,9 +18,9 @@ const CalculatePrice = ({ title, subtitle }) => {
           محاسبه قیمت برحسب نوع پارچه و مقدار آن محاسبه میشود.
         </div>
         <div className="flex items-center justify-between px-20">
-          <span className="text-2xl font-semibold text-gray-700">100</span>
-          <span className="text-2xl font-semibold text-gray-700">+</span>
-          <span className="text-2xl font-semibold text-gray-700">50</span>
+          <span className="text-2xl font-light text-black">105،000</span>
+          <span className="text-2xl font-light text-gray-700">+</span>
+          <span className="text-lg font-light text-gray-500">550،000</span>
         </div>
       </div>
     </div>
