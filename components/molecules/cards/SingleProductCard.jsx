@@ -1,6 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const SingleProductCard = ({ product }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const buttonStyle = {
+    backgroundColor: isHovered ? "#2c316b" : "#3C43EB",
+    transition: "background-color 0.3s ease-in-out",
+  };
+
   return (
     <div
       className=" rounded-lg overflow-hidden text-right"
@@ -66,10 +82,10 @@ const SingleProductCard = ({ product }) => {
         </div>
         <div className="px-4 pb-4">
           <button
-            className="w-full text-xs text-white px-4 py-2 rounded-lg"
-            style={{
-              backgroundColor: "#3C43EB",
-            }}
+            className="w-full text-xs text-white px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out"
+            style={buttonStyle}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             افزودن به سبد خرید
           </button>

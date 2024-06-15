@@ -1,6 +1,7 @@
 // components/ProductList.js
 import React from 'react';
 import SingleProductCard from '@/components/molecules/cards/SingleProductCard';
+import SingleLinkCard from '@/components/molecules/cards/SingleLinkCard';
 
 const products = [
   {
@@ -30,14 +31,27 @@ const products = [
     saleNumber: '16',
     price: '655،000',
   },
+  {
+    name: 'میلاد یوسفی',
+    profile: '/images/profile.jpg',
+    image: '/images/product.jpg',
+    title: 'گرامافون',
+    club: 'دولوپرز',
+    saleNumber: '42', // Update sale number
+    price: '820،000', // Update price
+  },
 ];
 
 const ProductsCards = () => {
   return (
-    <div dir='rtl' className="container mx-auto px-4 py-4 ">
+    <div dir="rtl" className="container mx-auto px-4 py-4 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {products.map((product, index) => (
-          <SingleProductCard key={index} product={product} />
+          index === 3 ? (
+            <SingleLinkCard key={index} product={product} />
+          ) : (
+            <SingleProductCard key={index} product={product} />
+          )
         ))}
       </div>
     </div>

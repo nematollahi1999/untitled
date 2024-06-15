@@ -8,7 +8,7 @@ function ShowProducts() {
     <div className="w-full">
       <OpenMenuButton />
       <PlayButton />
-      <div className="flex justify-between items-center text-right py-4">
+      <div className="flex justify-between items-center text-right py-4 px-4">
       <svg
           width="35"
           height="35"
