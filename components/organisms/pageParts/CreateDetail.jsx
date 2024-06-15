@@ -1,6 +1,7 @@
 "use client";
 import ProfileButton from "@/components/atoms/buttons/ProfileButton";
 import NeckAccordion from "@/components/molecules/accordions/NeckAccordion";
+import CalculatePrice from "@/components/molecules/cards/CalculatePrice";
 import React from "react";
 
 function CreateDetail() {
@@ -98,9 +99,15 @@ function CreateDetail() {
         <NeckAccordion items={accordionItems} />
       </div>
       <div className="px-4">
-        <button className=" rounded-full bg-black text-white py-3 px-6">
+        <button
+          className=" rounded-full text-white py-3 px-6"
+          style={{ backgroundColor: "#3C43EB" }}
+        >
           اتمام و ذخیره
         </button>
+      </div>
+      <div className="pr-4 py-4">
+        <CalculatePrice />
       </div>
     </div>
   );
