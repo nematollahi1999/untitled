@@ -16,10 +16,10 @@ const SingleLinkCard = ({ product }) => {
   const cardStyle = {
     position: "relative",
     backgroundColor: isHovered ? "#A5A8F2" : "#EBEBF6", // Lighter color on hover
-    borderTopRightRadius: "55px",
-    borderTopLeftRadius: "55px",
-    borderBottomRightRadius: "55px",
-    borderBottomLeftRadius: "55px",
+    borderTopRightRadius: "45px",
+    borderTopLeftRadius: "45px",
+    borderBottomRightRadius: "45px",
+    borderBottomLeftRadius: "45px",
     overflow: "hidden", // Ensure content stays within rounded corners
     transition: "background-color 0.1s ease-in-out", // Smooth transition on hover
   };
@@ -72,11 +72,9 @@ const SingleLinkCard = ({ product }) => {
             />
           </svg>
         </div>
-        
       </div>
     </div>
   );
 };
 
 export default SingleLinkCard;
- 
