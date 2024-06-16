@@ -45,7 +45,7 @@ const products = [
 const ProductsCards = () => {
   return (
     <div dir="rtl" className="container mx-auto px-4 py-4 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {products.map((product, index) => (
           index === 3 ? (
             <SingleLinkCard key={index} product={product} />
