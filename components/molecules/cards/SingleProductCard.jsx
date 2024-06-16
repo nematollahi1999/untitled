@@ -32,14 +32,14 @@ const SingleProductCard = ({ product }) => {
         <div className="flex items-center justify-between mb-2 py-2 px-6">
           <div className="flex items-center justify-end">
             <img
-              className="w-6 h-6 rounded-full "
+              className="w-5 h-5 rounded-full "
               src={product.profile}
               alt={product.name}
             />
-            <h2 className="text-sm font-light pr-2">{product.name}</h2>
+            <h2 className="text-xs font-light pr-2">{product.name}</h2>
           </div>
           <span
-            className="p-1 px-2 text-xs text-white rounded-lg"
+            className="p-1 leading-none text-xs text-white rounded-lg"
             style={{
               backgroundColor: "#3C43EB",
             }}
@@ -61,7 +61,7 @@ const SingleProductCard = ({ product }) => {
         />
         <div className="flex items-center justify-between px-4">
           <h3 className="text-md font-black text-sm">{product.title}</h3>
-          <p className="text-gray-700 text-sm">تومان {product.price}</p>
+          <p className="text-gray-700 text-xs">تومان {product.price}</p>
         </div>
         <div className="px-4 flex items-center justify-between pt-3">
           <div className="relative flex items-center mb-4">
@@ -70,13 +70,13 @@ const SingleProductCard = ({ product }) => {
                 key={index}
                 src={`/images/profile.jpg`} // Replace with actual image paths
                 alt={`Profile ${index + 1}`}
-                className={`w-7 h-7 rounded-full border-2 border-white -ml-3 ${
+                className={`w-5 h-5 rounded-full border-1  border-white -ml-3 ${
                   index !== 0 ? "" : ""
                 }`}
               />
             ))}
           </div>
-          <div className="text-xs text-gray-700 leading-none">
+          <div className="text-xs text-gray-700 ">
             {product.saleNumber} فروخته شده
           </div>
         </div>
