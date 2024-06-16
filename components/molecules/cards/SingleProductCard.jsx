@@ -22,10 +22,10 @@ const SingleProductCard = ({ product }) => {
       className=" rounded-lg overflow-hidden text-right"
       style={{
         backgroundColor: "#EBEBF6",
-        borderTopRightRadius: "55px",
-        borderTopLeftRadius: "55px",
-        borderBottomRightRadius: "55px",
-        borderBottomLeftRadius: "55px",
+        borderTopRightRadius: "45px",
+        borderTopLeftRadius: "45px",
+        borderBottomRightRadius: "45px",
+        borderBottomLeftRadius: "45px",
       }}
     >
       <div className="px-4 py-4 md:py-2">
@@ -53,10 +53,10 @@ const SingleProductCard = ({ product }) => {
             alt={product.title}
             className="w-full h-48 object-cover mb-4 "
             style={{
-              borderTopRightRadius: "35px",
-              borderTopLeftRadius: "35px",
-              borderBottomRightRadius: "35px",
-              borderBottomLeftRadius: "35px",
+              borderTopRightRadius: "30px",
+              borderTopLeftRadius: "30px",
+              borderBottomRightRadius: "30px",
+              borderBottomLeftRadius: "30px",
             }}
           />
         </div>
