@@ -28,7 +28,7 @@ const SingleProductCard = ({ product }) => {
         borderBottomLeftRadius: "55px",
       }}
     >
-      <div className="px-4 py-4">
+      <div className="px-4 py-4 md:py-2">
         <div className="flex items-center justify-between mb-2 py-2 px-6">
           <div className="flex items-center justify-end">
             <img
