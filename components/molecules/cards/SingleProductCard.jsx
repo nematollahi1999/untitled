@@ -38,33 +38,35 @@ const SingleProductCard = ({ product }) => {
             />
             <h2 className="text-xs font-light pr-2">{product.name}</h2>
           </div>
-          <span
-            className="p-1 leading-none text-xs text-white rounded-lg"
+        </div>
+        <div>
+          {/* <span
+            className="z-50 p-1 leading-none text-xs text-white rounded-lg"
             style={{
               backgroundColor: "#3C43EB",
             }}
           >
             {product.club}
-          </span>
+          </span> */}
+          <img
+            src={product.image}
+            alt={product.title}
+            className="w-full h-48 object-cover mb-4 "
+            style={{
+              borderTopRightRadius: "35px",
+              borderTopLeftRadius: "35px",
+              borderBottomRightRadius: "35px",
+              borderBottomLeftRadius: "35px",
+            }}
+          />
         </div>
 
-        <img
-          src={product.image}
-          alt={product.title}
-          className="w-full h-48 object-cover mb-4 "
-          style={{
-            borderTopRightRadius: "35px",
-            borderTopLeftRadius: "35px",
-            borderBottomRightRadius: "35px",
-            borderBottomLeftRadius: "35px",
-          }}
-        />
         <div className="flex items-center justify-between px-4">
           <h3 className="text-md font-black text-sm">{product.title}</h3>
           <p className="text-gray-700 text-xs">تومان {product.price}</p>
         </div>
-        <div className="px-4 flex items-center justify-between pt-3">
-          <div className="relative flex items-center mb-4">
+        <div className="px-4 flex items-center justify-between py-3">
+          <div className="relative flex items-center">
             {[...Array(5)].map((_, index) => (
               <img
                 key={index}
