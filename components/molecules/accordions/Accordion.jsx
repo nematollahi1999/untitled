@@ -124,7 +124,7 @@ const AccordionItem = ({
   );
 };
 
-const NeckAccordion = ({ items }) => {
+const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
 
@@ -159,4 +159,4 @@ const NeckAccordion = ({ items }) => {
   );
 };
 
-export default NeckAccordion;
+export default Accordion;
