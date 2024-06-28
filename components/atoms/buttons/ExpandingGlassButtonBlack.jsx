@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth }) => {
+const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -50,6 +50,7 @@ const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth }) => {
         className={`pl-10 pr-4 text-white transition-opacity duration-100 ease-in-out ${
           isHovered || isActive ? "opacity-100 delay-300" : "opacity-0"
         }`}
+        onClick={onClick }
       >
         <div className="font-bold text-xs text-right">{text}</div>
         <div className="font-light text-xs text-right">{subtext}</div>

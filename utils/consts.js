@@ -1,221 +1,160 @@
 // data/tshirts.js
-
 export const tshirts = [
-    { body: 'fit', neck: 'loose', sleeve: 'normal', src: 'images/01' },
-    { body: 'fit', neck: 'loose', sleeve: 'long', src: 'images/02' },
-    { body: 'fit', neck: 'loose', sleeve: 'less', src: 'images/03' },
-    { body: 'fit', neck: 'normal', sleeve: 'normal', src: 'images/04' },
-    { body: 'fit', neck: 'normal', sleeve: 'long', src: 'images/05' },
-    { body: 'fit', neck: 'normal', sleeve: 'less', src: 'images/06' },
-    { body: 'fit', neck: 'mock', sleeve: 'normal', src: 'images/07' },
-    { body: 'fit', neck: 'mock', sleeve: 'long', src: 'images/08' },
-    { body: 'fit', neck: 'mock', sleeve: 'less', src: 'images/09' },
-    { body: 'oversized', neck: 'loose', sleeve: 'normal', src: 'images/10' },
-    { body: 'oversized', neck: 'loose', sleeve: 'long', src: 'images/11' },
-    { body: 'oversized', neck: 'loose', sleeve: 'less', src: 'images/12' },
-    { body: 'oversized', neck: 'normal', sleeve: 'normal', src: 'images/13' },
-    { body: 'oversized', neck: 'normal', sleeve: 'long', src: 'images/14' },
-    { body: 'oversized', neck: 'normal', sleeve: 'less', src: 'images/15' },
-    { body: 'oversized', neck: 'mock', sleeve: 'normal', src: 'images/16' },
-    { body: 'oversized', neck: 'mock', sleeve: 'long', src: 'images/17' },
-    { body: 'oversized', neck: 'mock', sleeve: 'less', src: 'images/18' },
-  ];
+  // Fit body type
+  { body: "fit", neck: "loose", sleeve: "normal", src: "images/Renders/BNLN.jpg" },
+  { body: "fit", neck: "loose", sleeve: "long", src: "images/Renders/BNLL.jpg" },
+  { body: "fit", neck: "loose", sleeve: "less", src: "images/Renders/BNLS.jpg" },
+  { body: "fit", neck: "normal", sleeve: "normal", src: "images/Renders/BNNN.jpg" },
+  { body: "fit", neck: "normal", sleeve: "long", src: "images/Renders/BNNL.jpg" },
+  { body: "fit", neck: "normal", sleeve: "less", src: "images/Renders/BNNS.jpg" },
+  { body: "fit", neck: "mock", sleeve: "normal", src: "images/Renders/BNMN.jpg" },
+  { body: "fit", neck: "mock", sleeve: "long", src: "images/Renders/BNML.jpg" },
+  { body: "fit", neck: "mock", sleeve: "less", src: "images/Renders/BNMS.jpg" },
 
+  // Oversized body type
+  { body: "oversized", neck: "loose", sleeve: "normal", src: "images/Renders/BOLN.jpg" },
+  { body: "oversized", neck: "loose", sleeve: "long", src: "images/Renders/BOLL.jpg" },
+  { body: "oversized", neck: "loose", sleeve: "less", src: "images/Renders/BOLS.jpg" },
+  { body: "oversized", neck: "normal", sleeve: "normal", src: "images/Renders/BONN.jpg" },
+  { body: "oversized", neck: "normal", sleeve: "long", src: "images/Renders/BONL.jpg" },
+  { body: "oversized", neck: "normal", sleeve: "less", src: "images/Renders/BONS.jpg" },
+  { body: "oversized", neck: "mock", sleeve: "normal", src: "images/Renders/BOMN.jpg" },
+  { body: "oversized", neck: "mock", sleeve: "long", src: "images/Renders/BOML.jpg" },
+  { body: "oversized", neck: "mock", sleeve: "less", src: "images/Renders/BOMS.jpg" },
+];
+
+export const neckItems = [
+  {
+    title: "نوع یقه",
+    header: "انتخاب نوع یقه",
+    detail:
+      "نوع یقه برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
+    samples: "/",
+    options: [
+      {
+        title: "یقه لوس",
+        subtitle: "یقه عادی یک سانتی",
+        img: "/images/neck.jpg",
+        neck: "loose",
+      },
+      {
+        title: "یقه نرمال",
+        subtitle: "یقه عادی یک سانتی",
+        img: "/images/neck.jpg",
+        neck: "normal",
+      },
+      {
+        title: "یقه ماک",
+        subtitle: "یقه عادی یک سانتی",
+        img: "/images/neck.jpg",
+        neck: "mock",
+      },
+    ],
+  },
   
-  export const neckItems = [
-    {
-      title: "نوع یقه",
-      header: "انتخاب نوع یقه",
-      detail:
-        "نوع یقه برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "یقه نرمال",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "یقه سه سانتی",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "یقه ماک",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-    {
-      title: "فیت یقه",
-      header: "تعیین اندازه یقه",
-      detail:
-        "نوع یقه برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "لوس فیت",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "نرمال فیت",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "تایت فیت",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-    {
-      title: "دوخت یقه",
-      header: "تعیین دوخت یقه",
-      detail:
-        "نوع یقه برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "تک نخه",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "دو نخه",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "دوخت مخفی",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-  ];
+];
 
+export const bodyItems = [
+  {
+    title: "نوع تنه",
+    header: "انتخاب نوع تنه",
+    detail: "تفاوت تنه فیت و اورسایز برحسب سلیقه و میزان راحتی آن می باشد.",
+    samples: "/",
+    options: [
+      {
+        title: "نرمال فیت",
+        subtitle: "فیت عادی و نرمال",
+        img: "/images/neck.jpg",
+        body: "fit",
+      },
+      {
+        title: "اورسایز",
+        subtitle: "فیت گشادتر و راحت تر ",
+        img: "/images/neck.jpg",
+        body: "oversized",
+      },
+    ],
+  },
+  {
+    title: "دوخت تنه",
+    header: "انتخاب دوخت تنه",
+    detail: "نوع دوخت روی ایستایی و زیبایی لباس تاثیر گذار است.",
+    samples: "/",
+    options: [
+      {
+        title: "تک نخه",
+        subtitle: "یقه عادی یک سانتی",
+        img: "/images/neck.jpg",
+        stitch: "single",
+      },
+      {
+        title: "دو نخه",
+        subtitle: "یقه عادی یک سانتی",
+        img: "/images/neck.jpg",
+        stitch: "double",
+      },
+      {
+        title: "دوخت مخفی",
+        subtitle: "یقه عادی یک سانتی",
+        img: "/images/neck.jpg",
+        stitch: "hidden",
+      },
+    ],
+  },
+];
 
-  export const bodyItems = [
-    {
-      title: "نوع تنه",
-      header: "انتخاب نوع بدنه",
-      detail:
-        "نوع بدنه برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "نرمال",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "اورسایز",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        ],
-    },
-    {
-      title: "دوخت تنه",
-      header: "تعیین دوخت یقه",
-      detail:
-        "نوع تنه برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "تک نخه",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "دو نخه",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "دوخت مخفی",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-  ];
-
-  export const sleeveItems = [
-    {
-      title: "نوع آستین",
-      header: "انتخاب نوع آستین",
-      detail:
-        "نوع آستین برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "یقه نرمال",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "یقه سه سانتی",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "یقه ماک",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-    {
-      title: "فیت آستین",
-      header: "تعیین اندازه آستین",
-      detail:
-        "نوع آستین برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "لوس فیت",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "نرمال فیت",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "تایت فیت",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-    {
-      title: "دوخت آستین",
-      header: "تعیین دوخت آستین",
-      detail:
-        "نوع آستین برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
-      samples: "/",
-      options: [
-        {
-          title: "تک نخه",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "دو نخه",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-        {
-          title: "دوخت مخفی",
-          subtitle: "یقه عادی یک سانتی",
-          img: "/images/neck.jpg",
-        },
-      ],
-    },
-  ];
-
+export const sleeveItems = [
+  {
+    title: "نوع آستین",
+    header: "انتخاب نوع آستین",
+    detail:
+      "نوع آستین برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
+    samples: "/",
+    options: [
+      {
+        title: "آستین نرمال",
+        subtitle: "آستین با طول یه ربع",
+        img: "/images/neck.jpg",
+        sleeve: "normal",
+      },
+      {
+        title: "آستین لانگ",
+        subtitle: "آستین با طول دو ربع",
+        img: "/images/neck.jpg",
+        sleeve: "long",
+      },
+      {
+        title: "آستین حلقه ای",
+        subtitle: "بدون آستین",
+        img: "/images/neck.jpg",
+        sleeve: "less",
+      },
+    ],
+  },
+  {
+    title: "دوخت آستین",
+    header: "تعیین دوخت آستین",
+    detail: "نوع دوخت روی ایستایی و زیبایی آستین تاثیرگذار است.",
+    samples: "/",
+    options: [
+      {
+        title: "تک نخه",
+        subtitle: "دوخت عادی با ایستایی نرمال",
+        img: "/images/neck.jpg",
+        stitch: "single",
+      },
+      {
+        title: "دو نخه",
+        subtitle: "دوخت دو نخه با ایستایی بالا",
+        img: "/images/neck.jpg",
+        stitch: "double",
+      },
+      {
+        title: "دوخت مخفی",
+        subtitle: "دوخت مخفی با ایستایی نرمال",
+        img: "/images/neck.jpg",
+        stitch: "hidden",
+      },
+    ],
+  },
+];

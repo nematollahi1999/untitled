@@ -1,16 +1,12 @@
 "use client";
 import ProfileButton from "@/components/atoms/buttons/ProfileButton";
-import Accordion from "@/components/molecules/accordions/Accordion";
 import CalculatePrice from "@/components/molecules/cards/CalculatePrice";
-import { neckItems, bodyItems, sleeveItems } from "@/utils/consts";
-import React from "react";
+import {React , useState} from "react";
 
-function CreateDetail() {
+function CreateDetail({ accordion, headerText, buttonText }) {
   const handleButtonClick = () => {
     alert("Button clicked!");
   };
-
-  
 
   return (
     <div className="w-full">
@@ -23,18 +19,11 @@ function CreateDetail() {
           style={{ width: "auto" }}
         />
       </div>
-      <h1 className="font-black px-4 pt-8">طراحی یقه</h1>
+
       <div className="pr-4 py-4">
-        <Accordion items={neckItems} />
+        {accordion}
       </div>
-      <div className="px-4">
-        <button
-          className=" rounded-full text-white py-3 px-6"
-          style={{ backgroundColor: "#3C43EB" }}
-        >
-          اتمام و ذخیره
-        </button>
-      </div>
+      
       <div className="pr-4 py-5 ">
         <CalculatePrice />
       </div>

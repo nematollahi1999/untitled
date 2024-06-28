@@ -3,6 +3,7 @@ import ExpandingGlassButtonBlack from "@/components/atoms/buttons/ExpandingGlass
 import ChooseColorToggle from "@/components/atoms/toggles/ChooseColorToggle";
 import ClothesGlassToggle from "@/components/atoms/toggles/ClothesGlassToggle";
 
+
 const options = [
   { value: "option1", bgColor: "bg-gray-500" },
   { value: "option2", bgColor: "bg-black" },
@@ -47,12 +48,12 @@ const clothes = [
 
 import React from "react";
 
-function CreateSpace() {
+function CreateSpace({ renderBody, renderCollar, renderSleeve, createImage}) {
   return (
     <div
       className="bg-cover bg-center w-full h-full relative lg:rounded-tr-[60px] lg:rounded-tl-[60px] lg:rounded-br-[60px] md:rounded-tr-[60px] md:rounded-tl-[60px] md:rounded-br-[60px] rounded-none"
       style={{
-        backgroundImage: "url('/images/create.jpg')",
+        backgroundImage: `url(${createImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -69,18 +70,21 @@ function CreateSpace() {
           expandedWidth={"w-34"}
           text={"طراحی یقه"}
           subtext={"فیت استایل دوخت"}
+          onClick={renderCollar}
         />
         <ExpandingGlassButtonBlack
           style={{ top: "46%", left: "24%" }}
           expandedWidth={"w-34"}
           text={"طراحی آستین"}
           subtext={"فیت استایل دوخت"}
+          onClick={renderSleeve}
         />
         <ExpandingGlassButtonBlack
           style={{ top: "30%", left: "52%" }}
           expandedWidth={"w-34"}
           text={"طراحی تنه"}
           subtext={"فیت استایل دیزاین"}
+          onClick={renderBody}
         />
         <AddOrDecreaseButton style={{ bottom: "5%", right: "7%" }} />
         <ChooseColorToggle

@@ -1,4 +1,5 @@
 "use client";
+import { sleeveItems } from "@/utils/consts";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -124,7 +125,7 @@ const AccordionItem = ({
   );
 };
 
-const Accordion = ({ items }) => {
+const SleeveAccordion = () => {
   const [openIndex, setOpenIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
 
@@ -141,7 +142,7 @@ const Accordion = ({ items }) => {
 
   return (
     <div className="w-full">
-      {items.map((item, index) => (
+      {sleeveItems.map((item, index) => (
         <div>
         <AccordionItem
           key={index}
@@ -161,4 +162,4 @@ const Accordion = ({ items }) => {
   );
 };
 
-export default Accordion;
+export default SleeveAccordion;

@@ -1,4 +1,5 @@
 "use client";
+import { neckItems } from "@/utils/consts";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -16,7 +17,7 @@ const AccordionItem = ({
   const router = useRouter();
 
   return (
-    <div className=" rounded mb-2 w-full">
+    <div className="rounded mb-2 w-full">
       <div
         className="flex w-full items-center justify-between p-1 rounded-full cursor-pointer"
         onClick={onClick}
@@ -51,7 +52,10 @@ const AccordionItem = ({
               <h3 className="font-black text-sm">{header}</h3>
               <p className="font-light text-xs">{detail}</p>
             </div>
-            <button class="bg-gray-300 hover:bg-gray-400 text-black font-light text-sm py-2 px-4 rounded-lg leading-none" onClick={() => router.push(samples)}>
+            <button
+              className="bg-gray-300 hover:bg-gray-400 text-black font-light text-sm py-2 px-4 rounded-lg leading-none"
+              onClick={() => router.push(samples)}
+            >
               مشاهده نمونه
             </button>
           </div>
@@ -61,7 +65,7 @@ const AccordionItem = ({
                 <div
                   key={index}
                   className={`w-1/3 card rounded cursor-pointer`}
-                  onClick={() => onOptionClick(option.title)}
+                  onClick={() => onOptionClick(option.title, option.neck)}
                   style={
                     selectedOption === option.title
                       ? {
@@ -84,6 +88,7 @@ const AccordionItem = ({
                   <div className="flex flex-col items-start">
                     <div className="p-3">
                       <div className="text-sm text-black">{option.title}</div>
+                      <div className="hidden">{option.neck}</div>
                       <div className="text-xs font-light text-gray-700">
                         {option.subtitle}
                       </div>
@@ -100,7 +105,7 @@ const AccordionItem = ({
                           borderBottomLeftRadius: "45px",
                         }}
                       />
-                      {selectedOption === option.title && (
+                      {selectedOption === option.neck && (
                         <div
                           className="absolute inset-0 opacity-20 rounded-b-full"
                           style={{
@@ -124,25 +129,21 @@ const AccordionItem = ({
   );
 };
 
-const Accordion = ({ items }) => {
+const NeckAccordion = ({ selectedOption, onOptionChange }) => {
   const [openIndex, setOpenIndex] = useState(0);
-  const [selectedOptions, setSelectedOptions] = useState({});
 
   const handleItemClick = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const handleOptionClick = (index, option) => {
-    setSelectedOptions((prevSelectedOptions) => ({
-      ...prevSelectedOptions,
-      [index]: option,
-    }));
+  const handleOptionClick = (optionTitle, optionNeck) => {
+    onOptionChange(optionNeck);
   };
 
   return (
     <div className="w-full">
-      {items.map((item, index) => (
-        <div>
+      <h1 className="font-black px-4 py-4">طراحی یقه</h1>
+      {neckItems.map((item, index) => (
         <AccordionItem
           key={index}
           title={item.title}
@@ -152,13 +153,20 @@ const Accordion = ({ items }) => {
           samples={item.samples}
           isOpen={openIndex === index}
           onClick={() => handleItemClick(index)}
-          selectedOption={selectedOptions[index]}
-          onOptionClick={(option) => handleOptionClick(index, option)}
+          selectedOption={selectedOption}
+          onOptionClick={handleOptionClick}
         />
-        </div>
       ))}
+      <div className="px-4">
+        <button
+          className="rounded-full text-white py-3 px-6"
+          style={{ backgroundColor: "#3C43EB" }}
+        >
+          ذخیره یقه
+        </button>
+      </div>
     </div>
   );
 };
 
-export default Accordion;
+export default NeckAccordion;
