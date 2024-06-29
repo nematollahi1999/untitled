@@ -25,15 +25,15 @@ const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth, onClic
   return (
     <div
       className={`transform scale-80 lg:scale-100 md:scale-100 absolute flex items-center transition-all duration-300 ease-in-out backdrop-blur-sm bg-black/30 ${
-        isHovered || isActive ? expandedWidth : "w-12"
-      } h-12 rounded-full cursor-pointer overflow-hidden`}
+        isHovered || isActive ? expandedWidth : "w-10"
+      } h-10 rounded-full cursor-pointer overflow-hidden`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
       style={style}
     >
       <div
-        className={`absolute flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ease-in-out`}
+        className={`absolute flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ease-in-out`}
       >
         <svg
           className="flex items-center justify-center"
@@ -52,8 +52,8 @@ const ExpandingGlassButtonWhite = ({ style, text, subtext, expandedWidth, onClic
         }`}
         onClick={onClick }
       >
-        <div className="font-bold text-xs text-right">{text}</div>
-        <div className="font-light text-xs text-right">{subtext}</div>
+        <div className="font-bold text-[0.6rem] text-right">{text}</div>
+        <div className="font-light text-[0.6rem] text-right">{subtext}</div>
       </div>
     </div>
   );

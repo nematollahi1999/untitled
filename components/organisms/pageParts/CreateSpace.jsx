@@ -66,21 +66,21 @@ function CreateSpace({ renderBody, renderCollar, renderSleeve, createImage}) {
       />
       <div className="h-full w-full">
         <ExpandingGlassButtonBlack
-          style={{ top: "20%", left: "41%" }}
+          style={{ top: "16%", left: "55%" }}
           expandedWidth={"w-34"}
           text={"طراحی یقه"}
           subtext={"فیت استایل دوخت"}
           onClick={renderCollar}
         />
         <ExpandingGlassButtonBlack
-          style={{ top: "46%", left: "24%" }}
+          style={{ top: "24%", left: "28%" }}
           expandedWidth={"w-34"}
           text={"طراحی آستین"}
           subtext={"فیت استایل دوخت"}
           onClick={renderSleeve}
         />
         <ExpandingGlassButtonBlack
-          style={{ top: "30%", left: "52%" }}
+          style={{ top: "40%", left: "52%" }}
           expandedWidth={"w-34"}
           text={"طراحی تنه"}
           subtext={"فیت استایل دیزاین"}

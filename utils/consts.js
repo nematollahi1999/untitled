@@ -75,32 +75,7 @@ export const bodyItems = [
       },
     ],
   },
-  {
-    title: "دوخت تنه",
-    header: "انتخاب دوخت تنه",
-    detail: "نوع دوخت روی ایستایی و زیبایی لباس تاثیر گذار است.",
-    samples: "/",
-    options: [
-      {
-        title: "تک نخه",
-        subtitle: "یقه عادی یک سانتی",
-        img: "/images/neck.jpg",
-        stitch: "single",
-      },
-      {
-        title: "دو نخه",
-        subtitle: "یقه عادی یک سانتی",
-        img: "/images/neck.jpg",
-        stitch: "double",
-      },
-      {
-        title: "دوخت مخفی",
-        subtitle: "یقه عادی یک سانتی",
-        img: "/images/neck.jpg",
-        stitch: "hidden",
-      },
-    ],
-  },
+  
 ];
 
 export const sleeveItems = [
@@ -131,30 +106,30 @@ export const sleeveItems = [
       },
     ],
   },
-  {
-    title: "دوخت آستین",
-    header: "تعیین دوخت آستین",
-    detail: "نوع دوخت روی ایستایی و زیبایی آستین تاثیرگذار است.",
-    samples: "/",
-    options: [
-      {
-        title: "تک نخه",
-        subtitle: "دوخت عادی با ایستایی نرمال",
-        img: "/images/neck.jpg",
-        stitch: "single",
-      },
-      {
-        title: "دو نخه",
-        subtitle: "دوخت دو نخه با ایستایی بالا",
-        img: "/images/neck.jpg",
-        stitch: "double",
-      },
-      {
-        title: "دوخت مخفی",
-        subtitle: "دوخت مخفی با ایستایی نرمال",
-        img: "/images/neck.jpg",
-        stitch: "hidden",
-      },
-    ],
-  },
+  // {
+  //   title: "دوخت آستین",
+  //   header: "تعیین دوخت آستین",
+  //   detail: "نوع دوخت روی ایستایی و زیبایی آستین تاثیرگذار است.",
+  //   samples: "/",
+  //   options: [
+  //     {
+  //       title: "تک نخه",
+  //       subtitle: "دوخت عادی با ایستایی نرمال",
+  //       img: "/images/neck.jpg",
+  //       stitch: "single",
+  //     },
+  //     {
+  //       title: "دو نخه",
+  //       subtitle: "دوخت دو نخه با ایستایی بالا",
+  //       img: "/images/neck.jpg",
+  //       stitch: "double",
+  //     },
+  //     {
+  //       title: "دوخت مخفی",
+  //       subtitle: "دوخت مخفی با ایستایی نرمال",
+  //       img: "/images/neck.jpg",
+  //       stitch: "hidden",
+  //     },
+  //   ],
+  // },
 ];
