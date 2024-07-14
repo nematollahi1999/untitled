@@ -23,7 +23,7 @@ export const tshirts = [
   { body: "oversized", neck: "mock", sleeve: "less", src: "images/Renders/BOMS.jpg" },
 ];
 
-export const neckItems = [
+export const Items = [
   {
     title: "نوع یقه",
     header: "انتخاب نوع یقه",
@@ -48,6 +48,53 @@ export const neckItems = [
         subtitle: "یقه عادی یک سانتی",
         img: "/images/neck.jpg",
         neck: "mock",
+      },
+    ],
+  },
+  {
+    title: "نوع تنه",
+    header: "انتخاب نوع تنه",
+    detail: "تفاوت تنه فیت و اورسایز برحسب سلیقه و میزان راحتی آن می باشد.",
+    samples: "/",
+    options: [
+      {
+        title: "نرمال فیت",
+        subtitle: "فیت عادی و نرمال",
+        img: "/images/neck.jpg",
+        body: "fit",
+      },
+      {
+        title: "اورسایز",
+        subtitle: "فیت گشادتر و راحت تر ",
+        img: "/images/neck.jpg",
+        body: "oversized",
+      },
+    ],
+  },
+  {
+    title: "نوع آستین",
+    header: "انتخاب نوع آستین",
+    detail:
+      "نوع آستین برحسب سلیقه کاربر روی راحتی و انعطاف حرکتی گردن تاثیر مستقیم دارد.",
+    samples: "/",
+    options: [
+      {
+        title: "آستین نرمال",
+        subtitle: "آستین با طول یه ربع",
+        img: "/images/neck.jpg",
+        sleeve: "normal",
+      },
+      {
+        title: "آستین لانگ",
+        subtitle: "آستین با طول دو ربع",
+        img: "/images/neck.jpg",
+        sleeve: "long",
+      },
+      {
+        title: "آستین حلقه ای",
+        subtitle: "بدون آستین",
+        img: "/images/neck.jpg",
+        sleeve: "less",
       },
     ],
   },

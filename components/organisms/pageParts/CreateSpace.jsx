@@ -49,6 +49,7 @@ const clothes = [
 import React from "react";
 
 function CreateSpace({ renderBody, renderCollar, renderSleeve, createImage}) {
+
   return (
     <div
       className="bg-cover bg-center w-full h-full relative lg:rounded-tr-[60px] lg:rounded-tl-[60px] lg:rounded-br-[60px] md:rounded-tr-[60px] md:rounded-tl-[60px] md:rounded-br-[60px] rounded-none"
@@ -65,7 +66,7 @@ function CreateSpace({ renderBody, renderCollar, renderSleeve, createImage}) {
         style={{ top: "5%", left: "7%" }}
       />
       <div className="h-full w-full">
-        <ExpandingGlassButtonBlack
+        {/* <ExpandingGlassButtonBlack
           style={{ top: "16%", left: "55%" }}
           expandedWidth={"w-34"}
           text={"طراحی یقه"}
@@ -85,7 +86,7 @@ function CreateSpace({ renderBody, renderCollar, renderSleeve, createImage}) {
           text={"طراحی تنه"}
           subtext={"فیت استایل دیزاین"}
           onClick={renderBody}
-        />
+        /> */}
         <AddOrDecreaseButton style={{ bottom: "5%", right: "7%" }} />
         <ChooseColorToggle
           options={options}

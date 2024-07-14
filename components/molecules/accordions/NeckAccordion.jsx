@@ -1,5 +1,5 @@
 "use client";
-import { neckItems } from "@/utils/consts";
+import { Items } from "@/utils/consts";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -143,7 +143,7 @@ const NeckAccordion = ({ selectedOption, onOptionChange }) => {
   return (
     <div className="w-full">
       <h1 className="font-black px-4 py-4">طراحی یقه</h1>
-      {neckItems.map((item, index) => (
+      {Items.map((item, index) => (
         <AccordionItem
           key={index}
           title={item.title}
